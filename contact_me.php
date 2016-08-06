@@ -6,9 +6,9 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "namansachdevaa@gmail.com";
+    $email_to = "aries.ajay1@outlook.com";
  
-    $email_subject = "IMP-New message on your portfolio site.";
+    $email_subject = "IMP-New message from your ODiPi site.";
  
      
  
@@ -37,11 +37,7 @@ if(isset($_POST['email'])) {
     if(!isset($_POST['name']) ||
  
         !isset($_POST['email']) ||
- 
-        !isset($_POST['mobile']) ||
-
-        !isset($_POST['subject']) ||
-
+        
         !isset($_POST['message'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
@@ -53,9 +49,7 @@ if(isset($_POST['email'])) {
     $name = $_POST['name']; // required
  
     $email_from = $_POST['email']; // required
- 
-    $mobile = $_POST['mobile']; // not required
- 
+    
     $message = $_POST['message']; // required
  
      
@@ -108,11 +102,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Name: ".clean_string($name)."\n";
  
     $email_message .= "Email: ".clean_string($email_from)."\n";
- 
-    $email_message .= "Mobile: ".clean_string($mobile)."\n";
-
-    $email_message .= "Subject: ".clean_string($subject)."\n";
- 
+    
     $email_message .= "Message: ".clean_string($message)."\n";
  
      
