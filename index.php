@@ -333,7 +333,7 @@
                         <div class="input-field col s6">
                             <i class="mdi-communication-email prefix white-text"></i>
                             <input id="icon_email" name="email" type="email" class="validate white-text">
-                            <label for="icon_email" class="white-text">Email-id</label>
+                            <label for="icon_email" class="white-text">Email ID</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="mdi-editor-mode-edit prefix white-text"></i>
@@ -349,7 +349,11 @@
                 </form>
             </div>
             <div class="col l3 s12">
-                <h5 class="white-text">ajayverma.tk</h5>
+                <a href="http://ajayverma.tk">															<!-- COMMITS-->
+                <h5 class="white-text">ajayverma.tk </h5></a>
+                
+                <a href="http://namansachdeva.ml">
+                <h5 class="white-text">namansachdeva.ml </h5></a>
                 <ul>
                     <li><a class="white-text" target="_blank" href="http://www.ajayverma.tk/">Home</a></li>
                     <li><a class="white-text" target="_blank" href="http://www.bncsite.wordpress.com/">Blog</a></li>
@@ -359,22 +363,22 @@
                 <h5 class="white-text">Social</h5>
                 <ul>
                     <li>
-                        <a class="white-text" target="_blank" href="https://www.behance.net/joashp">
+                        <a class="white-text" target="_blank" href="https://www.behance.net/Odipi">
                             <i class="small fa fa-behance-square white-text"></i> Behance
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" target="_blank" href="https://www.facebook.com/avcool1">
+                        <a class="white-text" target="_blank" href="https://www.facebook.com/Odipi">
                             <i class="small fa fa-facebook-square white-text"></i> Facebook
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" target="_blank" href="https://github.com/aries.ajay1">
+                        <a class="white-text" target="_blank" href="https://github.com/aries.ajay1/odipi">
                             <i class="small fa fa-github-square white-text"></i> Github
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" target="_blank" href="https://www.linkedin.com/aries.ajay1">
+                        <a class="white-text" target="_blank" href="https://www.linkedin.com/odipi">
                             <i class="small fa fa-linkedin-square white-text"></i> Linkedin
                         </a>
                     </li>
