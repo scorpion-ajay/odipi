@@ -65,10 +65,32 @@
 
 <!--Dashboard-->
 <div class="section" id="index-banner1">
-    <div class="container">
-          <script>
+        <div class="row">
+        <div class="col l3 s12 m6" style="float: left;">
+          <div class="card white ">
+            <div class="card-content" style="color: #2196F3;">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+                
+            </div>     
+              <script>
                 // set up options
-                var hash = ;          // Any unicode string
+                var hash = <?php include("connect.php"); 
+                $sql = "SELECT firstname FROM userinfo";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    echo  md5($row["firstname"]);
+                }
+                }
+                ?>
+
                 var options = {
                             background: [255, 255, 255, 255],  // rgba white
                             margin: 0.2,                       // 20% margin
@@ -83,7 +105,6 @@
           </script>
     </div>
 </div>
-
 <!--Parallax-->
 <div class="parallax-container">
     <div class="parallax"><img src="img/bg.png"></div>
