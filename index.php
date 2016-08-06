@@ -34,7 +34,7 @@
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo">Online Debate Portal</a>
+            <a href="#" id="logo-container" class="brand-logo">ODiPi</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="register.php">Sign up/Sign in</a></li>
                     <li><a href="#intro">About</a></li>
