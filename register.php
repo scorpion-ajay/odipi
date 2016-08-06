@@ -51,11 +51,41 @@
     </nav>
 </div>
 
+
+<!--register.php-->
+<?php
+ require('connect.php');
+ // If form submitted, insert values into the database.
+ if (isset($_POST['firstname'])!=null && isset($_POST['lastname']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email']) && isset($_POST['phone'])){
+ $fname = $_POST['firstname'];
+ $lname = $_POST['lastname'];
+ $username = $_POST['username'];
+ $password = $_POST['password'];
+ $email = $_POST['email'];
+ $phone = $_POST['phone'];
+ $username = stripslashes($username);
+ $password = stripslashes($password);
+ $sql = "INSERT INTO userinfo (firstname, lastname, username, password, email, phone )
+VALUES ('$firstname', '$lastname', '$username', '$password', '$email', '$phone')";
+
+if ($conn->query($sql) === TRUE) {
+    //echo "New record created successfully";
+    header("location: login.php");
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+}
+?>
+<!------------------>
+
+
 <!--Register-->
 <div class="section" id="index-banner1">
     <div class="container">
         <div class="row">
-        <form class="col l6 s12 m6" action="registerphp.php" method="post">
+        <form class="col l6 s12 m6" action="register.php" method="post">
         <h4 class="text_h1 center letters">Register Here!</h4>
             <div class="input-field col l6 s6">
                 <i class="fa fa-2x fa-user prefix white-text"></i>
@@ -94,8 +124,8 @@
                 </button>
             </div>
         </form>
-        <form class="col l6 s12 m6" action="contact.php" method="post">
-            <h4 class="text_h1 center letters">Login Here!</h4>
+        <form class="col l6 s12 m6" action="login.php" method="post">
+            <h4 class="text_h1 center letters validate">Login Here!</h4>
             <div class="input-field col l6 s6">
                 <i class="fa fa-2x fa-check-circle prefix white-text"></i>
                 <input id="user_name1" name="username1" type="text" class="validate">
@@ -111,6 +141,7 @@
                 <i class="mdi-content-send right white-text"></i>
                 </button>
             </div>
+        </form>
         </div>
     </div>
 </div>
@@ -119,6 +150,15 @@
 <div class="parallax-container">
     <div class="parallax"><img src="img/bg.png"></div>
 </div>
+
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hide-on-large-only">
+        <a class="btn btn-primary" href="#top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
 <!--Footer-->
 <footer id="contact" class="page-footer default_color scrollspy">
@@ -195,17 +235,10 @@
         </div>
 </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hide-on-large-only">
-        <a class="btn btn-primary" href="#top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
     <!--  Scripts-->
     <script src="min/plugin-min.js"></script>
     <script src="web/js/easyResponsiveTabs.js"></script>
     <script src="min/custom-min.js"></script>
-
+    
     </body>
 </html>
