@@ -278,7 +278,13 @@ footer.page-footer {
     -ms-background-size: cover;
 }
 
-
+i:hover{
+	color: #2196F3;
+	transition-property: font-size;
+	transition-duration: 500ms;
+	transition-delay: 50ms;
+	transition-timing-function: ease-in;
+}
 .aboutT {
 	font-size:22px;
 	color: BLACK;
