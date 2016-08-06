@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#2196F3">
-    <title>Odipi | Online Debate Portal</title>
+    <title>Online Debate Portal</title>
     <!--favicon-->
     <link href="" sizes="16x16 32x32" rel="shortcut icon">
 
@@ -34,7 +34,7 @@
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo">ODiPi</a>
+            <a href="#" id="logo-container" class="brand-logo">Online Debate Portal</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="register.php">Sign up/Sign in</a></li>
                     <li><a href="#intro">About</a></li>
@@ -323,7 +323,7 @@
     <div class="container">  
         <div class="row">
             <div class="col l6 s12">
-                <form class="col s12" action="contact.php" method="post">
+                <form name="contactForm" class="col s12" action="email/sendMail.php" method="post">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix white-text"></i>
@@ -333,7 +333,7 @@
                         <div class="input-field col s6">
                             <i class="mdi-communication-email prefix white-text"></i>
                             <input id="icon_email" name="email" type="email" class="validate white-text">
-                            <label for="icon_email" class="white-text">Email ID</label>
+                            <label for="icon_email" class="white-text">Email-id</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="mdi-editor-mode-edit prefix white-text"></i>
@@ -349,11 +349,7 @@
                 </form>
             </div>
             <div class="col l3 s12">
-                <a href="http://ajayverma.tk">															<!-- COMMITS-->
-                <h5 class="white-text">ajayverma.tk </h5></a>
-                
-                <a href="http://namansachdeva.ml">
-                <h5 class="white-text">namansachdeva.ml </h5></a>
+                <h5 class="white-text">ajayverma.tk</h5>
                 <ul>
                     <li><a class="white-text" target="_blank" href="http://www.ajayverma.tk/">Home</a></li>
                     <li><a class="white-text" target="_blank" href="http://www.bncsite.wordpress.com/">Blog</a></li>
@@ -363,22 +359,22 @@
                 <h5 class="white-text">Social</h5>
                 <ul>
                     <li>
-                        <a class="white-text" target="_blank" href="https://www.behance.net/Odipi">
+                        <a class="white-text" target="_blank" href="https://www.behance.net/joashp">
                             <i class="small fa fa-behance-square white-text"></i> Behance
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" target="_blank" href="https://www.facebook.com/Odipi">
+                        <a class="white-text" target="_blank" href="https://www.facebook.com/avcool1">
                             <i class="small fa fa-facebook-square white-text"></i> Facebook
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" target="_blank" href="https://github.com/aries.ajay1/odipi">
+                        <a class="white-text" target="_blank" href="https://github.com/aries.ajay1">
                             <i class="small fa fa-github-square white-text"></i> Github
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" target="_blank" href="https://www.linkedin.com/odipi">
+                        <a class="white-text" target="_blank" href="https://www.linkedin.com/aries.ajay1">
                             <i class="small fa fa-linkedin-square white-text"></i> Linkedin
                         </a>
                     </li>
